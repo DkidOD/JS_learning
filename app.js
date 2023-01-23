@@ -62,7 +62,7 @@ console.log( city + ', ' + street + ' ' + 26);
 
 // Assignment operator
 
-
+/*
 let age = 18 + 5;
 age += 2; // age = age + 2
 age -= 3; // age = age - 2
@@ -71,7 +71,139 @@ age /= 2; // age = age / 2
 age++; // age = age + 1
 age--; // age = age - 1
 console.log(age);
-
+*/
 
 // Comparison operator
+
+/*
+const vasiliy  = 20;
+console.log(age > vasiliy); // true
+console.log(age >= vasiliy); // true
+console.log(age < vasiliy); // false
+console.log(age <= vasiliy); // false
+console.log(age == vasiliy); // false
+*/
+
+/*
+const isSuited = 100 - 10 > 90 - 5 ;
+console.log(isSuited);
+*/
+// (priority of operations (weight))
+// 100 - (12) 10 > (10) 90 - (12) 5
+// 90 > 85 - true
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table
+/*
+const a = (6 + 10) / 2;
+console.log(a);
+*/
+
+/*
+let b;
+let c;
+c = b = 100 + 50;
+console.log(c); // 150
+console.log(b); // 150
+*/
+
+
+// Types of data
+
+// Objects:
+/*
+const user = {
+ name : "Vasiliy",
+ age : 18    
+};
+*/
+
+//Primitives
+// const age = 18
+/*
+1. Numbers 
+const age = 18;
+
+2. Strings
+const surname = 'Popov'
+
+3. Boolean
+const isAdmin = true; // true of false
+
+4. Undefined
+const isAdmin = undefined;
+let data;
+
+5. Null - empty
+let data = null;
+
+6. Symbols
+const admin = Symbol('Admin');
+
+7. Big numbers - specialized type
+const big = BigInt(99999999999999999);
+*/
+
+/*
+let a = 5;
+let b = 5.6;
+console.log(typeof b);
+
+let isAdmin = false;
+isAdmin = a > 10;
+console.log(typeof isAdmin);
+
+let c;
+console.log(typeof c); // undefined
+c = 5;
+console.log(typeof c); // number
+
+let d = null;
+console.log(typeof d); // object
+console.log(d); // null 
+console.log(d == null); // true
+console.log(typeof (d == null)); // boolean
+console.log(typeof d == null); // false
+console.log(typeof d == 'object'); // true
+console.log(typeof d == object); // object is not defined
+*/
+/*
+let e = 'asd';
+console.log(typeof e);
+*/
+
+
+ /*
+Ваша часовая ставка 80$ и вы готовы работать не
+более 5 часов в день 5 дней в неделю (кроме выходных).
+К вам приходит заказчик и предлагает заказ на 40
+часов работы.
+Сейчас понедельник.
+Вы должны уехать через 11 дней.
+Выведете в консоль:
+- Boolean переменную успеете ли вы взяться за работу
+- Сколько вы за неё попросите?
+*/
+
+/*
+let payPerHour = 80;
+let totalRequestWorkHour = 40;
+let beforeVacationDays = 11;
+let workHoursPerDay = 5;
+let weekend = 2;
+let canWorkInHours = (beforeVacationDays - weekend) * workHoursPerDay;
+let salary = totalRequestWorkHour * payPerHour;
+console.log('Успеете ли вы взяться за работу? ' + (totalRequestWorkHour < canWorkInHours));
+console.log('Сколько вы за неё попросите? ' + sallary +'$')
+*/
+
+// Answer from Course
+/*
+//Data
+const payRateUSD = 80;
+const projectHours = 40;
+const availableHours = (11 - 2) * 5;
+
+//Solution
+console.log('Can I take this project in work? ' + (availableHours > projectHours));
+console.log('Project salary: ' + projectHours * payRateUSD + '$');
+*/
 
