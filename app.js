@@ -207,3 +207,69 @@ console.log('Can I take this project in work? ' + (availableHours > projectHours
 console.log('Project salary: ' + projectHours * payRateUSD + '$');
 */
 
+// Template strings Literal string
+/*
+const projectName = 'Shopping Mall Site';
+const price = 2000;
+const author = 'Valentin Banglagesh';
+const template = author + ' buying ' + projectName + ' for ' + price + '$';
+console.log(template);
+
+const template2 = `${author} buying ${projectName} for ${price}$`
+console.log(template2);
+
+const template3 = 'Project \n' + 'Price: ' + price + '$ \n' + 'Buyer: ' + author;
+console.log(template3);
+
+const template4 = `Project
+Price: ${price}$
+Buyer: ${author}`;
+console.log(template4);
+*/
+
+// Converting types of data
+/*
+const age = '18';
+console.log(age + 5); // 185
+console.log(Number(age) + 5); // 23  String to number Number()
+console.log(age - 3); // 15
+console.log(age / 3); // 6
+console.log(age * 3); // 54
+const userName = 'Valentin';
+console.log(userName + 5);
+console.log(Number(userName) + 5); // NaN
+console.log(typeof NaN);
+
+console.log(String(4) + 7); // 47 
+
+console.log(Boolean(0)); // false 
+console.log(Boolean(1)); // true
+
+console.log(Boolean('')); // false
+console.log(Boolean('asdsdasd')); // true 
+
+console.log(Boolean('') + 10); // false + 10 = 10
+console.log(Boolean('asd') + 10); // true + 10 = 11
+console.log(true + 10); // true + 10 = 11
+
+const a = 2 + '10'; // 210
+console.log (a - 10); // 200
+*/
+
+// Conditional - true of false
+/*
+console.log(Boolean(0)); // false
+console.log(Boolean('')); //false
+console.log(Boolean(undefined)); // false
+console.log(Boolean(null)); // false
+console.log(Boolean(Number('sx'))); // false Number('sx') = NaN
+console.log(Boolean(NaN)); // false
+*/
+
+ 
+
+
+
+
+
+
