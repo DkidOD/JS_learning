@@ -266,7 +266,20 @@ console.log(Boolean(Number('sx'))); // false Number('sx') = NaN
 console.log(Boolean(NaN)); // false
 */
 
- 
+// if else
+/*
+const money = 100;
+const canBuy = money > 50;
+
+if (money > 50){
+    console.log('Can buy our product');
+} else if (money > 5) {
+    console.log('Can buy MINI product');
+} else {
+    console.log('No enough money')
+}
+*/
+
 
 
 
