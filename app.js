@@ -280,9 +280,57 @@ if (money > 50){
 }
 */
 
+// Task - Putting deposit
 
+/*
+Description
 
+The man put 12 000$ with rate 7% per year
+with capitalization 1 time per month.
 
+Give output in console, can he buy a house 
+for 13 500$ in 2 years after taking deposit. 
+And remains of money after buying.
 
+Total = Summa * (1 + rate in month not in %) ^ time in month;
+*/
 
+/*
+// calc per formula given by course
+const deposit = 12000;
+const ratePerYear = 7;
+const housePrice = 13500;
+const rateInMonth = 7 / 12 / 100;
+const periodInMonth = 24;
+console.log(rateInMonth);
+let total;
+total = deposit * (1 + rateInMonth) ** periodInMonth;
+console.log(total);
 
+// my calc
+let calculations = 12000;
+for (i = 0 ; i != 24 ; i ++ ){
+    calculations = calculations + calculations * rateInMonth;
+}
+console.log(calculations);
+
+let house = total > housePrice;
+let remains = total - housePrice;
+const template5 = `If the man putting ${deposit}$ for ${periodInMonth} month
+He can buy House :${house} and he will have remains of cost ${remains}$`
+console.log(template5);
+*/
+
+// Course solution
+
+const deposit = 1000;
+const rate = 0.07;
+const depositLength = 24;
+const houseCost = 13500;
+
+const res = deposit * (1 + rate / 12) ** 24;
+if (res > houseCost){
+    console.log(`Collected ${res} Can buy. Remains ${res - houseCost}$`)
+} else {
+    console.log(`Collected ${res}. Can not buy the house (((`)
+}
