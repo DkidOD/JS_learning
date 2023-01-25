@@ -488,7 +488,7 @@ switch(input){
 */
 
 // Courses solution
-
+/*
 let res = prompt("How much it will be 7 + or - 15?");
 
 switch(true){
@@ -514,4 +514,29 @@ if (res === 'I am not robot'){
         console.log('You are a robot technologies! :)')   
     }
 }
+*/
 
+// Chapter 6
+// Boolean logics
+/*
+AND => && - a and b // true if a=true and b=true
+OR => || - a or b // true if a or b = true // false id both are false
+NOT A => ! - // true to false or false to true inverting
+*/
+
+// Operators of boolean logics.
+/*
+const isAdmin = true;
+const canWrite = true;
+
+console.log(`System file ${isAdmin && canWrite}`)
+console.log(`User file ${isAdmin || canWrite}`)
+console.log(`Inverting admin permission ${!isAdmin}`)
+
+const isEdited =  true;
+const isSuperAdmin = false;
+
+console.log(`System file with editing  ${
+    isAdmin && canWrite && (!isEdited || isSuperAdmin)
+}`)
+*/
