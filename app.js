@@ -418,7 +418,7 @@ const num = 0;
 */
 
 // Ternary operators
-
+/*
 const bmwX3Price = 100000; // 100k
 const fordFocusPrice = 10000; // 10k 
 const budget = 1000; // 20k
@@ -461,7 +461,57 @@ if (-10 > 0){
 
 const str = -10 > 0 ? 'Greater that zero': 'Not greater that zero';
 console.log(str);
+*/
 
+// Practice. Exercise - Checking of robot
 
+/*
+Taking data from user using prompt. We will asking
+"How much it will be 7 + or - 15?"
+If answer are correct write in console 'Good', 
+if not - 'You are a robot technologies! :)',
+but if he write "I am not robot", it will be also 'Good'
+*/
 
+/*
+let input = prompt("How much it will be 7 + or - 15?");
+
+switch(input){
+    case 'I am not robot':
+    case '22': 
+    case '-8': 
+        console.log('Good');
+        break;
+    default:
+        console.log('You are a robot technologies! :)')
+}
+*/
+
+// Courses solution
+
+let res = prompt("How much it will be 7 + or - 15?");
+
+switch(true){
+    case res === 'I am not robot':
+    case Number(res) === 22: 
+    case Number(res) === -8: 
+        console.log('Good');
+        break;
+    default:
+        console.log('You are a robot technologies! :)')
+}
+
+if (res === 'I am not robot'){
+    console.log('Good');
+} else {
+    const numRes = Number(res);
+    switch (numRes){
+        case 22: 
+        case -8: 
+        console.log('Good');
+        break;
+    default:
+        console.log('You are a robot technologies! :)')   
+    }
+}
 
