@@ -322,7 +322,7 @@ console.log(template5);
 */
 
 // Course solution
-
+/*
 const deposit = 1000;
 const rate = 0.07;
 const depositLength = 24;
@@ -333,4 +333,85 @@ if (res > houseCost){
     console.log(`Collected ${res} Can buy. Remains ${res - houseCost}$`)
 } else {
     console.log(`Collected ${res}. Can not buy the house (((`)
+}
+*/
+
+// Equality operators
+/*
+const secretNumber =  '7';
+
+if (secretNumber === 7){  //strong '===' string not equal number
+    console.log('You reach!!! STRONG'); // if number 7 
+}
+
+if (Number(secretNumber) === 7){ // to number
+    console.log('You reach!!! STRONG'); 
+}
+
+if (secretNumber == 7){  
+    console.log('You reach!!! NOT strong'); // if string 7
+}
+*/
+/*
+const q = Number(prompt('Write a number: '));
+if (q === 7){  
+    console.log('You reach!!! STRONG'); 
+}
+*/
+
+// SWITCH Statements
+/*
+const role = 'admin';
+
+if (role === 'manager') {
+    console.log('Manager');
+} else if (role === 'admin') {
+    console.log('Administrator');
+} else if (role === 'ceo') {
+    console.log('CEO');
+} else {
+    console.log('Who are you, stranger???')
+}
+
+switch (role){
+    case 'manager': // role === 'manager'
+        console.log('Manager');
+        break;
+    case 'admin':
+        console.log('Administrator');
+        break;
+    case 'ceo':
+        console.log('CEO');
+        break;
+    default:
+        console.log('Who are you, stranger???');
+}
+*/
+/*
+const role = 'manager';
+switch (role){ 
+    case 'manager': // role === 'manager'
+        console.log('Manager'); //  in case manager - true
+    case 'admin':
+        console.log('It is not boss'); //  in case manager - true
+        break;
+    case 'ceo':
+        console.log('Boss');
+        break;
+    default:
+        console.log('Who are you, stranger???');
+}
+*/
+
+const num = 0;
+
+ switch (true){
+    case num > 0:
+        console.log('Positive +');
+        break;
+    case num < 0:
+        console.log('Negative -');
+        break; 
+    default:
+        console.log('Yes! It is ZERO !)')
 }
