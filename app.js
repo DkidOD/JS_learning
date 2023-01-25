@@ -402,11 +402,11 @@ switch (role){
         console.log('Who are you, stranger???');
 }
 */
-
+/*
 const num = 0;
 
  switch (true){
-    case num > 0:
+    case num > 0: // true === num > 0
         console.log('Positive +');
         break;
     case num < 0:
@@ -415,3 +415,53 @@ const num = 0;
     default:
         console.log('Yes! It is ZERO !)')
 }
+*/
+
+// Ternary operators
+
+const bmwX3Price = 100000; // 100k
+const fordFocusPrice = 10000; // 10k 
+const budget = 1000; // 20k
+
+let message;
+
+if (budget >= bmwX3Price){
+    message = 'BMW';
+} else if (budget >= fordFocusPrice) {
+    message = 'Ford';
+} else {
+    message = 'Bicycle';
+}
+console.log(`I wanna buy a ${message}!!!`)
+
+if (budget > bmwX3Price){
+    message = 'BMW';
+} else {
+    message = 'Bicycle';
+}
+console.log(`I wanna buy a ${message}!!!`)
+
+const newMessage = budget > bmwX3Price ? 'BMW': 'Bicycle';
+console.log(`I wanna buy a ${newMessage}!!!`);
+
+console.log(`I wanna buy a ${budget > bmwX3Price ? 'BMW': 'Bicycle!!!!'}!!!`);
+
+let message2 = budget > bmwX3Price ? 'BMW': budget > fordFocusPrice ? 'Ford' : 'Bicycle :)'
+console.log(`I wanna buy a ${message2}!!!`);
+
+
+if (-10 > 0){
+    console.log('Greater that zero');
+} else {
+    console.log('Not greater that zero');
+}
+
+
+10 > 0 ? console.log('Greater that zero'):console.log('Not greater that zero');
+
+const str = -10 > 0 ? 'Greater that zero': 'Not greater that zero';
+console.log(str);
+
+
+
+
