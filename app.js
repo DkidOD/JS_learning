@@ -540,3 +540,70 @@ console.log(`System file with editing  ${
     isAdmin && canWrite && (!isEdited || isSuperAdmin)
 }`)
 */
+
+// Operators with other types
+
+/*
+console.log ('Mariya' || 'John'); // true true // Mariya
+console.log (false || 'John'); // false tue // John
+console.log ('Mariya' || false); // true false // Mariya
+console.log (false || false); // false false // false
+
+console.log ('Mariya' && 'John'); // John
+console.log (false && 'John'); // false
+console.log ('Mariya' && false); // false
+console.log (false && false); // false
+
+let a = 'Can';
+const userName = a || 'Alfred';
+console.log(userName);
+
+const isAdmin = true;
+const fileName = isAdmin && `file_${userName}.mp4`; // true || file.mp4 
+console.log(fileName); // file.mp4 
+*/
+
+// Null merge operator
+/*
+let userName = 0;
+console.log(userName || 'Default UserName'); // Default UserName
+console.log(userName ?? 'Default UserName'); // '' // null and undefined -> Dafault UserName
+*/
+
+// Practice. Exercise - Game buyer
+/*
+User want to buy a game.
+He can make it if:
+-   Balance is more that 1000 (balance) 
+    or Bonus balance more that 100 (bonusBalance);
+-   Not banned (isBanned); // not banned - false
+-   Game is not bought (isExist); // is Exist - true
+-   Game is selling (isSelling); // is Selling - true
+
+Write cases for buying and output result in console;  
+*/
+/*
+//My suggestion
+const balance = 1000;
+const bonusBalance = 100;
+const isBanned = false;
+const isExist = false;
+const isSelling = true;
+const canOrNot = (balance > 1000 || bonusBalance > 100) && !isBanned && !isExist && isSelling;
+canOrNot ? console.log('Can buy :) ') : console.log ("Can't buy :(" )
+//console.log(canOrNot);
+*/
+
+// Courses solution
+
+const balance = 1000;
+const bonusBalance = 101;
+const isBanned = false;
+const isExist = false;
+const isSelling = true;
+
+const canBuy = (balance > 1000 || bonusBalance > 100) 
+                && !isBanned 
+                && !isExist 
+                && isSelling;
+console.log(`Can I buy a game?: ${canBuy ? 'Yes' : 'No'}`);
