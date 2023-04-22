@@ -595,7 +595,7 @@ canOrNot ? console.log('Can buy :) ') : console.log ("Can't buy :(" )
 */
 
 // Courses solution
-
+/*
 const balance = 1000;
 const bonusBalance = 101;
 const isBanned = false;
@@ -607,3 +607,36 @@ const canBuy = (balance > 1000 || bonusBalance > 100)
                 && !isExist 
                 && isSelling;
 console.log(`Can I buy a game?: ${canBuy ? 'Yes' : 'No'}`);
+*/
+
+
+// Chapter 7
+// Intro in functions
+
+// function - key word
+// fromMilesToKm - name of function
+// (miles) - argument
+// return - returned argument
+
+/*
+function fromMilesToKm (miles){
+    const km = miles / 0.6137;
+    return km;
+} 
+
+console.log(fromMilesToKm(600));
+*/
+/*
+function logName(name, surname){
+    console.log(`My name is ${name} ${surname} !`)
+}
+logName('Alex','Odessov');
+*/
+
+let a = 301012345678909786950437382910473n;
+let b = a / 97n;
+
+console.log(a);
+console.log(b);
+
+
